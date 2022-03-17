@@ -17,6 +17,8 @@ services:
       MYSQL_USER: 'admin'
       MYSQL_PASSWORD: 'admin'
       MYSQL_ROOT_PASSWORD: 'admin'
+    ports:
+      - "3306:3306"
     volumes:
       - hapi-fhir-mysql:/var/lib/mysql
 volumes:
